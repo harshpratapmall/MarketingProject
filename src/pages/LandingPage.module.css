@@ -1,0 +1,30 @@
+/* Landing page styles */
+.landing_page {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .landing_page h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .landing_page p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  
+  .landing_page a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .landing_page a:hover {
+    background-color: #0056b3;
+  }
+  
