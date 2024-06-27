@@ -7,24 +7,12 @@ import { faFacebook, faYoutube, faInstagram, faLinkedin, faTwitter } from '@fort
 function LandingPage() {
   return (
     <div className={styles.landing_page}>
-      <nav className={styles.navbar}>
-        <div className={styles.nav_links}>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/login">Login</Link>
-        </div>
-        <div>
-          <Link to="/contact">Contact</Link>
-        </div>
-      </nav>
       <div className={styles.hero}>
-        <h1>Welcome to Our Marketing Website!</h1>
-        <p>Boost your brand and reach new heights with innovative strategies.</p>
-        <Link to="/contact">Contact Us</Link>
-      </div>
-      <p>Leverage cutting-edge technology and expert solutions to elevate your business.</p>
+        <h1>Welcome to BODOR</h1>
+        <p>Dare To Dream</p>
+            </div>
       <footer className={styles.footer}>
+        <Link to="/contact" className={styles.contact_button}>Contact Us</Link>
         <div className={styles.social_icons}>
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebook} /></a>
           <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutube} /></a>
@@ -32,7 +20,6 @@ function LandingPage() {
           <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
           <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitter} /></a>
         </div>
-      
         <p>&copy; 2024 BODOR</p>
       </footer>
     </div>
