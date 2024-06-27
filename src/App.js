@@ -10,6 +10,7 @@ import LoginPage from './pages/LoginPage';
 
 
 
+
 // Private Route Component (Optional, for protected routes)
 function PrivateRoute({ children }) {
   const isLoggedIn = localStorage.getItem('isLoggedIn'); // Simulate login state
