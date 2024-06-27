@@ -17,6 +17,7 @@ function ContactPage() {
     setName("");
     setEmail("");
     setMessage("");
+    window.location.href = "/";
   };
 
   return (

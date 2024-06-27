@@ -27,6 +27,7 @@ function App() {
           <Link to="/contact">Contact</Link>
         </div>
       </nav>
+      
 
       <Routes>
         <Route path="/" element={<LandingPage />} />
