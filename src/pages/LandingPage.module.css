@@ -1,10 +1,11 @@
+
 /* Landing page styles */
 .landing_page {
   text-align: center;
   padding: 2rem;
   font-family: Arial, sans-serif;
   color: #333;
-  background-color: #f8f9fa;
+  background-color: white;
   height: 200vh; /* Making the page scrollable */
 }
 
@@ -34,24 +35,19 @@
 .navbar a:hover {
   color: #a9c6e8;
 }
+
+
 .hero {
-  padding: 4rem 2rem;
-  background-image: url('https://www.shutterstock.com/image-illustration/3d-illustration-astronaut-looks-moon-600nw-2237193303.jpg'); 
+  background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20230722/pngtree-abstract-sci-fi-astronaut-and-exoplanets-in-deep-space-a-3d-image_3769731.jpg'); 
   background-size: cover;
   background-position: center;
   color: white;
   border-radius: 5px;
   margin-bottom: 2rem;
   position: relative;
-  height:300px
+  height: 300px;
 }
 
-.hero p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  color: rgb(255, 255, 255);
-  font-style:italic
-}
 
 .hero::before {
   content: '';
@@ -64,19 +60,50 @@
   border-radius: 5px;
 }
 
-.hero h1 {
+.hero h1, .hero p {
   position: relative;
   z-index: 1;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.hero p {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: rgb(255, 255, 255);
+  font-style: italic;
+}
+
+.info_boxes {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  gap: 1rem;
+}
+
+.info_box {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 30%;
+}
+
+.info_box h2 {
+  font-size: 1.5rem;
+  color: #00274d;
+}
+
+.info_box p {
+  font-size: 1rem;
+  color: #555;
+}
 
 .contact_button {
   display: inline-block;
@@ -118,18 +145,4 @@
 
 .footer .social_icons a:hover {
   color: #a9c6e8;
-}
-
-.footer .footer_links {
-  margin: 1rem 0;
-}
-
-.footer .footer_links a {
-  color: white;
-  text-decoration: none;
-  margin: 0 0.5rem;
-}
-
-.footer .footer_links a:hover {
-  text-decoration: underline;
 }
