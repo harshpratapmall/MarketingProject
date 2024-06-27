@@ -1,18 +1,19 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link, Navigate } from 'react-router-dom';
 import './App.css'; // Import your CSS file
+import LandingPage from './pages/LandingPage'
 
 // Landing Page Component
-function LandingPage() {
-  return (
-    <div className="landing-page">
-      <h1>Welcome to Our Marketing Website!</h1>
-      <p>Boost your brand and reach new heights.</p>
-      <Link to="/contact">Contact Us</Link>
-      {/* Consider adding a call to action button here, e.g., "Learn More" or "Get Started" */}
-    </div>
-  );
-}
+// function LandingPage() {
+//   return (
+//     <div className="landing-page">
+//       <h1>Welcome to Our Marketing Website!</h1>
+//       <p>Boost your brand and reach new heights.</p>
+//       <Link to="/contact">Contact Us</Link>
+//       {/* Consider adding a call to action button here, e.g., "Learn More" or "Get Started" */}
+//     </div>
+//   );
+// }
 
 // Login Page Component (Basic example, replace with authentication logic)
 function LoginPage() {
