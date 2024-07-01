@@ -9,6 +9,17 @@
     background-color: white;
   }
   
+  .contact_button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: #8f3c0f;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+  }
+
   .login_page h2 {
     margin-bottom: 1rem;
     color: #333;
@@ -39,4 +50,32 @@
   
   .login_page button:hover {
     background-color: #0056b3;
+  }
+
+  .footer {
+    bottom: 0;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .footer p {
+    margin: 0.5rem 0;
+  }
+  
+  .footer .social_icons {
+    margin: 1rem 0;
+  }
+  
+  .footer .social_icons a {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  .footer .social_icons a:hover {
+    color: #a9c6e8;
   }
