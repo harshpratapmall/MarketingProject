@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from './ContactPage.module.css'
+import Footer from "./Footer";
 
 // Contact Page Component
 function ContactPage() {
@@ -21,6 +22,7 @@ function ContactPage() {
   };
 
   return (
+    <div>
     <div className={styles.contact_page}>
       <h2>Contact Us</h2>
       <form onSubmit={handleSubmit}>
@@ -49,6 +51,8 @@ function ContactPage() {
         />
         <button type="submit">Send Message</button>
       </form>
+    </div>
+    <Footer/>
     </div>
   );
 }
