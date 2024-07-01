@@ -13,7 +13,7 @@ function ContactPage() {
 
     // Implement form submission logic here (e.g., send email or store data)
     alert(
-      `Thank you, ${name}, for contacting us! We will get back to you soon.`
+      `Thank you, ${name}, for contacting us! We will get back to you soon. You will receive notification from us.`
     );
     setName("");
     setEmail("");
@@ -22,7 +22,7 @@ function ContactPage() {
   };
 
   return (
-    <div>
+    <div style={{backgroundColor:"#f9d7c1"}}>
     <div className={styles.contact_page}>
       <h2>Contact Us</h2>
       <form onSubmit={handleSubmit}>
@@ -52,6 +52,7 @@ function ContactPage() {
         <button type="submit">Send Message</button>
       </form>
     </div>
+    <div style={{height:"253px"}}></div>
     <Footer/>
     </div>
   );

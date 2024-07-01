@@ -7,7 +7,7 @@ import { faFacebook, faYoutube, faInstagram, faLinkedin, faTwitter } from '@fort
 function Footer() {
 
     return(
-<footer className={styles.footer}>
+<footer className={styles.footer} >
         <Link to="/contact" className={styles.contact_button}>Contact Us</Link>
         <div className={styles.social_icons}>
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebook} /></a>
