@@ -5,6 +5,7 @@ import LandingPage from "./pages/LandingPage";
 import ContactPage from "./pages/ContactPage";
 import LoginPage from "./pages/LoginPage";
 import ProductsPage from "./pages/ProductsPage";
+import Aboutus from "./pages/Aboutus";
 
 // Private Route Component (Optional, for protected routes)
 function PrivateRoute({ children }) {
@@ -24,7 +25,7 @@ function App() {
           <Link to="/">Home</Link>
           <Link to="/products">Products</Link>
           <Link to="/contact">Contact</Link>
-          <Link to="/about">About</Link>
+          <Link to="/about">About Us</Link>
           <Link to="/login">Login</Link>
         </div>
       </nav>
@@ -33,6 +34,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/about" element={<Aboutus />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </BrowserRouter>

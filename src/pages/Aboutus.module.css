@@ -1,0 +1,68 @@
+/* src/Aboutus.module.css */
+.aboutusContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9d7c1; /* Light cyan background */
+  }
+  
+  .aboutusContent {
+    text-align: center;
+    max-width: 1000px;
+    height: 400px;
+    background: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .aboutusContent h1 {
+    font-size: 3rem;
+    color: #a04615; /* Teal color */
+    margin-bottom: 20px;
+  }
+  
+  .txt{
+    line-height: 30px;
+    padding: 40px;
+  }
+  .aboutusContent p {
+    font-size: 1.2rem;
+    color: #004d40; /* Dark teal color */
+    margin-bottom: 20px;
+    
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .stat {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .icon {
+    font-size: 3em;
+    color: #00796b; /* Teal color */
+    margin-right: 10px;
+  }
+  
+  .info h2 {
+    font-size: 2em;
+    margin: 0;
+    color: #004d40; /* Dark teal color */
+  }
+  
+  .info p {
+    font-size: 1em;
+    margin: 0;
+    color: #004d40; /* Dark teal color */
+  }
+  
