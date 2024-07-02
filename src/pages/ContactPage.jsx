@@ -18,6 +18,7 @@ function ContactPage() {
     setName("");
     setEmail("");
     setMessage("");
+    //Send a mail and whatsapp message
     window.location.href = "/";
   };
 
