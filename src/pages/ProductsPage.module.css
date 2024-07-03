@@ -1,0 +1,218 @@
+/* ProductsPage.module.css */
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #e74c3c;
+    --background-color: #ecf0f1;
+    --text-color: #2c3e50;
+    --link-color: #3498db;
+    --link-hover-color: #2980b9;
+    --nav-item-hover-bg: rgba(255, 255, 255, 0.621);
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+  }
+  
+  .navList {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    margin-bottom: 2rem;
+  }
+  
+  .navContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .navContentLeft, .navContentRight {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navItem {
+    margin: 0.5rem;
+    flex: 1 1 200px;
+    max-width: 220px;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    height: 190px;
+  }
+  
+  .navLink:hover {
+    background-color: var(--nav-item-hover-bg);
+    transform: translateY(-5px);
+  }
+  
+  .navImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .navTitle {
+    margin: 0.5rem 0 0;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  .navDescription {
+    margin: 0.2rem 0 0;
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    text-align: center;
+  }
+  
+  .pipeSection {
+    padding: 2rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 800px;
+  }
+  
+  .pipeHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .pipeTitle {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+  }
+  
+  .pipeNavigation {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .swiperButton {
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+  }
+  
+  .swiperContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .swiperWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .pipeSlide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .pipeLink {
+    text-decoration: none;
+    color: var(--text-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pipeImageWrapper {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+  
+  .pipeImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .pipeTag {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .pipeDivider {
+    width: 80%;
+    margin: 1rem 0;
+    border: 1px solid var(--secondary-color);
+  }
+  
+  .pipeContent {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .pipeMore {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .pipeMoreText {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+  }
+  
+  .pipeMoreLink {
+    font-size: 0.9rem;
+    color: var(--link-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .pipeMoreLink:hover {
+    color: var(--link-hover-color);
+  }
+  
+  .pipeMoreIcon {
+    width: 16px;
+    height: 16px;
+    margin-left: 0.2rem;
+    fill: currentColor;
+  }
+  

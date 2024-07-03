@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Link, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link, Navigate, useLocation } from "react-router-dom";
 import "./App.css"; // Import your CSS file
 import LandingPage from "./pages/LandingPage";
 import ContactPage from "./pages/ContactPage";
@@ -15,18 +15,20 @@ function PrivateRoute({ children }) {
 }
 
 function App() {
+  const location = useLocation();
+
   return (
-    <BrowserRouter>
+    <div>
       <nav>
         <div className="nav-left">
           <span>BODOR</span>
         </div>
         <div className="nav-center">
-          <Link to="/">Home</Link>
-          <Link to="/products">Products</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/about">About Us</Link>
-          <Link to="/login">Login</Link>
+          {location.pathname !== "/" ? <Link to="/">Home</Link> :  <Link to="/" class="active-link">Home</Link>}
+          {location.pathname !== "/products" ? <Link to="/products">Products</Link> : <Link to="/products" class="active-link">Products</Link>}
+          {location.pathname !== "/contact" ? <Link to="/contact" >Contact</Link> : <Link to="/contact" class="active-link">Contact</Link>}
+          {location.pathname !== "/about" ? <Link to="/about">About Us</Link>:<Link to="/about" class="active-link">About Us</Link> }
+          {location.pathname !== "/login" ? <Link to="/login">Login</Link>:<Link to="/login" class="active-link">Login</Link> }
         </div>
       </nav>
 
@@ -37,8 +39,16 @@ function App() {
         <Route path="/about" element={<Aboutus />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
+    </div>
+  );
+}
+
+function Root() {
+  return (
+    <BrowserRouter>
+      <App />
     </BrowserRouter>
   );
 }
 
-export default App;
+export default Root;

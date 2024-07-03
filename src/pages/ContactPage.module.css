@@ -1,42 +1,58 @@
-/* Contact page styles */
-.contact_page {
-    max-width: 600px;
-    margin: 2rem auto;
-    padding: 2rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: white;
-  }
+.contactPage {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactPage h2 {
+  margin-bottom: 1rem;
+  color: #333333;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contactPage form {
+  display: grid;
+  gap: 1rem;
+}
+
+.contactPage label {
+  font-size: 1rem;
+  color: #555555;
+}
+
+.contactPage input,
+.contactPage textarea {
+  width: calc(100% - 2rem);
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contactPage textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contactPage button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactPage button:hover {
+  background-color: #0056b3;
+}
   
-  .contact_page h2 {
-    margin-bottom: 1rem;
-    color: #333;
-  }
-  
-  .contact_page label {
-    display: block;
-    margin: 0.5rem 0;
-  }
-  
-  .contact_page input,
-  .contact_page textarea {
-    width: calc(100% - 2rem);
-    padding: 0.5rem;
-    margin: 0.5rem 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  .contact_page button {
-    width: 100%;
-    padding: 0.5rem;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .contact_page button:hover {
-    background-color: #0056b3;
-  }

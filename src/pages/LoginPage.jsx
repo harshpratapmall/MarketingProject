@@ -1,23 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './LoginPage.module.css';
-import Footer from "./Footer";
+import Footer from './Footer';
 
 // Login Page Component (Basic example, replace with authentication logic)
 function LoginPage() {
-    const [username, setUsername] = React.useState('');
-    const [email, setEmail] = React.useState('');
-    const [password, setPassword] = React.useState('');
-  
-    const handleSubmit = (event) => {
-      event.preventDefault();
-      alert(`Thank you, ${username}, for submitting your details`);
-      localStorage.setItem('isLoggedIn', true);
-      window.location.href = "/";
-    };
-  
-    return (
-      <div style={{backgroundColor:"#f9d7c1"}}>
-      <div className={styles.signupPage}>
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Implement authentication logic here (e.g., send credentials to backend)
+    alert(`Thank you, ${username}, for signing up!`);
+    localStorage.setItem('isLoggedIn', true);
+    // Redirect or handle login success
+    window.location.href = '/';
+  };
+
+  return (
+    <div style={{ backgroundColor: '#f9d7c1' }}>
+      <div className={styles.loginPage}>
         <div className={styles.content}>
           <h2>Sign Up</h2>
           <form onSubmit={handleSubmit}>
@@ -49,10 +51,10 @@ function LoginPage() {
           </form>
         </div>
       </div>
-      <div style={{height:"253px"}}></div>
-      <Footer/>
+      <div style={{ height: '253px' }}></div>
+      <Footer />
     </div>
-    );
+  );
 }
 
 export default LoginPage;

@@ -42,3 +42,8 @@ nav a:hover {
 
 
 
+.active-link {
+  font-weight: bold;
+  /* text-decoration: underline; */
+  color:#ff823e;
+}

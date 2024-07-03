@@ -1,47 +1,53 @@
-/* LoginPage.module.css */
-.signupPage {
+.loginPage {
   max-width: 600px;
-  margin: 2rem auto;
+  margin: 0rem auto;
   padding: 2rem;
   border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: white;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
 }
 
-.content {
+.loginPage .content {
   flex: 1; /* This makes the content take up the remaining space */
 }
 
-.signupPage h2 {
+.loginPage h2 {
   margin-bottom: 1rem;
-  color: #333;
+  color: #333333;
+  font-size: 2rem;
+  text-align: center;
 }
 
-.signupPage label {
+.loginPage label {
   display: block;
   margin: 0.5rem 0;
+  color: #555555;
 }
 
-.signupPage input {
+.loginPage input {
   width: calc(100% - 2rem);
-  padding: 0.5rem;
+  padding: 0.75rem;
   margin: 0.5rem 0;
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
   border-radius: 5px;
+  font-size: 1rem;
 }
 
-.signupPage button {
+.loginPage button {
   width: 100%;
-  padding: 0.5rem;
-  background-color: #007BFF;
-  color: white;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
+  font-size: 1rem;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.signupPage button:hover {
+.loginPage button:hover {
   background-color: #0056b3;
 }
